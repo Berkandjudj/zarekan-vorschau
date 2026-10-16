@@ -883,3 +883,10 @@ h1[tabindex="-1"]:focus{outline:none}
 /* keine doppelte Linie am Ende der Produktdetails */
 .pi-details dt:last-of-type,.pi-details dd:last-of-type{border-bottom:0}
 @media(prefers-reduced-motion:reduce){.back-home .icon{transition:none}}
+
+/* Startbereich: Faktenzeile und Test-Link (Textrunde Oktober 2026) */
+.hero-copy>p.hero-sub{font-family:var(--sans);font-size:15px;line-height:1.6;letter-spacing:.01em;max-width:360px;margin:18px 0 0;color:#e8e1d4}
+.hero .hero-test{margin-top:18px;font-size:13px;letter-spacing:.04em;color:#e8e1d4;text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
+.hero .hero-test:focus-visible{outline:2px solid #d9b77a;outline-offset:4px}
+@media(max-width:700px){.hero-copy>p.hero-sub{font-size:14px;max-width:300px;margin-top:14px}.hero .hero-test{margin-top:6px}}
+.nowrap{white-space:nowrap}
