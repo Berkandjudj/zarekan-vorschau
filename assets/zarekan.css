@@ -890,3 +890,26 @@ h1[tabindex="-1"]:focus{outline:none}
 .hero .hero-test:focus-visible{outline:2px solid #d9b77a;outline-offset:4px}
 @media(max-width:700px){.hero-copy>p.hero-sub{font-size:14px;max-width:300px;margin-top:14px}.hero .hero-test{margin-top:6px}}
 .nowrap{white-space:nowrap}
+
+/* Korrekturen 16.11.2026: lesbare Mindestgröße, kompakter Cookie-Hinweis auf kleinen Bildschirmen */
+.world-prototype,.world-hint,.world-counter{font-size:11px}
+.why-mark{font-size:max(11px,.62em)}
+@media(max-width:700px){
+  .preview-strip{font-size:11px;letter-spacing:.06em}
+  .hero-copy>.eyebrow,.hero-copy .eyebrow,.intro-band .eyebrow,.section-head .eyebrow,.story-top>.eyebrow,.heritage-copy .eyebrow,.science-intro .eyebrow,.world-heading .eyebrow{font-size:11px}
+  .world-prototype,.world-hint{font-size:11px}
+  .consent-inner{padding:14px 14px 12px;gap:10px}
+  .consent-copy h2{font-size:16px;margin-bottom:4px}
+  .consent-copy p{font-size:13px;line-height:1.45}
+  .consent-links{margin-top:4px!important}
+  .consent-actions{gap:8px}
+  .consent-btn{min-height:44px;padding:9px 10px;font-size:13px}
+  .consent-actions .consent-btn[data-consent-action="settings"]{min-height:40px;border-color:transparent;text-decoration:underline;text-underline-offset:3px}
+}
+.world-heading .eyebrow,.world-edition,.world-overline,.why-scent-type,.footer-bottom span,.footer-bottom a{font-size:11px}
+@media(max-width:700px){
+  .hero .hero-title,.hero-copy .eyebrow.hero-title,.hero-bottom a,.world-notes li,.world-overline,.why-scent-type,.footer-bottom span,.footer-bottom a{font-size:11px}
+  .consent-inner{position:relative}
+  .consent-copy h2{padding-right:120px}
+  .consent-actions .consent-btn[data-consent-action="settings"]{position:absolute;top:2px;right:6px;min-height:44px;padding:0 8px;font-size:13px;width:auto;grid-column:auto;order:0}
+}
